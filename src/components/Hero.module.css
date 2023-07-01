@@ -1,0 +1,86 @@
+.hero {
+  height: 22rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #495e57;
+  color: white;
+}
+.heroContainer {
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: visible;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: rgb(235, 180, 15);
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0;
+}
+.hero h3 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.hero p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.reservedButton {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: rgb(235, 180, 15);
+}
+.ButtonLayout :hover {
+  color: rgb(235, 180, 15);
+  background-color: rgb(250, 250, 250);
+}
+.ButtonLayout :active {
+  color: rgb(249, 248, 244);
+  background-color: rgb(7, 90, 80);
+}
+.sushiImg {
+  position: relative;
+  top: 3rem;
+  left: 1rem;
+  width: 20rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media (max-width: 820px) {
+  .heroContainer {
+    width: 35rem;
+  }
+
+  .sushiImg {
+    width: 15rem;
+    height: 22rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 100%;
+  }
+  .heroContainer {
+    width: 90%;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sushiImg {
+    position: inherit;
+    width: 100%;
+    height: 12rem;
+  }
+}
